@@ -1,0 +1,117 @@
+.comment-modal {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 500px;
+    color: #eee;
+    font-family: inherit;
+    z-index: 1100;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.comment-modal textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background-color: #222;
+    color: #eee;
+    border: 1px solid #444;
+    border-radius: 0;
+    resize: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.comment-modal textarea:focus {
+    border-color: #e50914;
+    outline: none;
+}
+
+.comment-modal input[type="number"] {
+    width: 100px;
+    padding: 0.5rem;
+    background-color: #222;
+    color: #eee;
+    border: 1px solid #444;
+    border-radius: 0;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.comment-modal input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+    cursor: pointer;
+    accent-color: #e50914;
+}
+
+.comment-modal .slider-label {
+    color: #eee;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+    user-select: none;
+}
+
+.comment-modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.comment-modal-button-save {
+    background-color: #e50914;
+    color: #fff;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-modal-button-save:hover {
+    background-color: #b0060f;
+    color: #fff;
+}
+
+.comment-modal-button-cancel {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-modal-button-cancel:hover {
+    background-color: #5a6268;
+    color: #fff;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}

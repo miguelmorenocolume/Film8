@@ -1,0 +1,130 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 0.8rem 1.5rem;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: -0.1rem;
+  z-index: 1000;
+}
+
+.navbar-left .navbar-logo {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-left .navbar-logo:hover {
+  color: #fff;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.navbar-right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-right a:hover {
+  color: #e50914;
+}
+
+.btn-logout {
+  all: unset;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border: 2px solid #e50914;
+  color: #e50914;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1;
+  height: 36px;
+}
+
+.btn-logout:hover {
+  background-color: #e50914;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .navbar-left .navbar-logo {
+    display: none;
+  }
+
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #111;
+    padding: 1rem 0;
+    border-top: 1px solid #333;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .navbar-right a,
+  .btn-logout {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
+  }
+
+  .btn-logout {
+    width: auto;
+    align-self: center;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  margin-bottom: -0.25rem;
+  z-index: 1;
+}
+
+.menu-toggle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+}

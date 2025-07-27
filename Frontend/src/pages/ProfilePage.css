@@ -1,0 +1,64 @@
+.profile-page {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #121212;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  user-select: none;
+}
+
+.profile-page h2 {
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #bbb;
+  font-size: 2rem;
+  border-bottom: 2px solid #e50914;
+  padding-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+
+.profile-page p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #cfcfcf;
+  line-height: 1.5;
+}
+
+.profile-page h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #bbb;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.4rem;
+}
+
+.profile-page ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.profile-page li {
+  background: #1e1e1e;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #e50914;
+  color: #ddd;
+  font-size: 1rem;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.profile-page li:hover {
+  background-color: #2b2b2b;
+}
+
+.profile-page strong {
+  color: #fff;
+}
